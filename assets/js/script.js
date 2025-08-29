@@ -693,6 +693,14 @@
                 contactPageMap();
             }
 
+            // Cache original logo src for scroll-sticky headers to allow swap on sticky
+            $(".scroll-sticky-header .site-logo img").each(function(){
+                var $img = $(this);
+                if(!$img.data('original-src')){
+                    $img.data('original-src', $img.attr('src'));
+                }
+            });
+
         });
 
 
@@ -707,7 +715,23 @@
         }
 
         if ($(".scroll-sticky-header").length) {
-            stickNav($(".scroll-sticky-header .navigation"));
+            var $nav = $(".scroll-sticky-header .navigation");
+            stickNav($nav);
+
+            var $logoImg = $(".scroll-sticky-header .site-logo img");
+            if ($nav.hasClass("sticky-nav")) {
+                // Switch to sticky header logo
+                $logoImg.attr("src", "assets/images/header/header-logo.png");
+            } else {
+                // Revert to original logo per page
+                $logoImg.each(function(){
+                    var $img = $(this);
+                    var original = $img.data('original-src');
+                    if (original) {
+                        $img.attr('src', original);
+                    }
+                });
+            }
         }
 
 
