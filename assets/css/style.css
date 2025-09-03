@@ -1,3 +1,28 @@
+/* Navigation bold hover and active state */
+.navigation-holder .nav > li > a:hover,
+.navigation-holder .nav > li > a:focus {
+    font-weight: 700;
+}
+
+.navigation-holder .nav > li.is-active > a,
+.navigation-holder .nav > li.active > a {
+    font-weight: 700;
+}
+
+/* Subtle color change with smooth transition */
+.navigation-holder .nav > li > a {
+    transition: color 0.2s ease-in-out;
+}
+
+.navigation-holder .nav > li > a:hover,
+.navigation-holder .nav > li > a:focus {
+    color: #DCB473;
+}
+
+.navigation-holder .nav > li.is-active > a,
+.navigation-holder .nav > li.active > a {
+    color: #DCB473;
+}
 /* Screen reader only text */
 .sr-only {
     position: absolute;

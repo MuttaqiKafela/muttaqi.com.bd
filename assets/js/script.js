@@ -680,6 +680,7 @@
             preloader();
 
             sliderBgSetting();
+            heroSlider();
 			
             toggleMobileNavigation();
 
@@ -700,6 +701,21 @@
                     $img.data('original-src', $img.attr('src'));
                 }
             });
+
+            // Mark current page nav item as active
+            (function markActiveNav(){
+                var path = window.location.pathname.replace(/\/index\.html?$/, '/');
+                $(".navigation-holder .nav > li").each(function(){
+                    var $li = $(this);
+                    var $a = $li.find('> a');
+                    var href = $a.attr('href');
+                    if(!href) return;
+                    var normalized = href.replace(/\/index\.html?$/, '/');
+                    if (normalized === path || (normalized !== '/' && path.indexOf(normalized) === 0)) {
+                        $li.addClass('is-active');
+                    }
+                });
+            })();
 
         });
 

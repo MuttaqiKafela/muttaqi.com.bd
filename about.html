@@ -48,6 +48,42 @@
     <link href="assets/css/jquery.fancybox.css" rel="stylesheet" />
     <!-- Custom styles for this template -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <style>
+      /* Custom styles for team grid layout */
+      .team-grids {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+      }
+      
+      .team-grids .grid {
+        flex: 0 0 calc(25% - 30px);
+        max-width: calc(25% - 30px);
+        margin-bottom: 30px;
+      }
+      
+      @media (max-width: 1200px) {
+        .team-grids .grid {
+          flex: 0 0 calc(33.33% - 30px);
+          max-width: calc(33.33% - 30px);
+        }
+      }
+      
+      @media (max-width: 991px) {
+        .team-grids .grid {
+          flex: 0 0 calc(50% - 30px);
+          max-width: calc(50% - 30px);
+        }
+      }
+      
+      @media (max-width: 767px) {
+        .team-grids .grid {
+          flex: 0 0 calc(100% - 30px);
+          max-width: calc(100% - 30px);
+        }
+      }
+    </style>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -198,11 +234,11 @@
           <div class="row">
             <div class="col col-md-8 col-md-offset-2">
               <div class="section-title-s3">
-                <h2>Who <span>We Are</span></h2>
+                <h2><span>আমাদের সম্পর্কে</span></h2>
                 <p>
-                  Meet Our Dynamic Management Team: Leading with Passion,
-                  Expertise, and Vision, Guiding Our Company Towards Success and
-                  Growth.
+                  পরিচিত হোন আমাদের উদ্যমী পরিচালনা দলটির সঙ্গে: 
+                  যারা আবেগ, দক্ষতা ও দূরদর্শিতার সাথে নেতৃত্ব দিচ্ছেন, 
+                  আমাদের কোম্পানিকে সফলতা ও উন্নতির পথে এগিয়ে নিয়ে যাচ্ছেন।
                 </p>
               </div>
             </div>
@@ -213,23 +249,89 @@
                 <div class="grid">
                   <div class="img-holder-social">
                     <div class="img-holder">
-                      <img src="assets/images/team/raju2.jpg" alt />
+                      <img src="assets/images/team/raju.jpg" alt="Raju Mia - Founder of Muttaqi Hajj & Consultancy" width="210" height="210" loading="lazy" />
                     </div>
                   </div>
                   <div class="details">
-                    <h3>Founder</h3>
-                    <p>Raju Mia</p>
+                    <h3>প্রতিষ্ঠাতা</h3>
+                    <p>মোঃ রাজু মিয়া</p>
                   </div>
                 </div>
                 <div class="grid">
                   <div class="img-holder-social">
                     <div class="img-holder">
-                      <img src="assets/images/team/raju2.jpg" alt="Sadiqul Islam - Managing Director of Muttaqi Hajj & Consultancy" width="210" height="210" loading="lazy" />
+                      <img src="assets/images/team/raju2.jpg" alt="Md Sahadat Hossain Khandakar - Managing Director of Muttaqi Hajj & Consultancy" width="210" height="210" loading="lazy" />
                     </div>
                   </div>
                   <div class="details">
-                    <h3>Managing Director</h3>
-                    <p>Sadiqul Islam</p>
+                    <h3>ব্যবস্থাপনা পরিচালক</h3>
+                    <p>মোঃ শাহাদাৎ হোসেন খন্দকার সাগর</p>
+                  </div>
+                </div>
+                <div class="grid">
+                  <div class="img-holder-social">
+                    <div class="img-holder">
+                      <img src="assets/images/team/raju3.jpg" alt="Sadiqul Islam - Managing Director of Muttaqi Hajj & Consultancy" width="210" height="210" loading="lazy" />
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>ব্যবস্থাপনা পরিচালক</h3>
+                    <p>এ কে এম সাদিকুল আলম</p>
+                  </div>
+                </div>
+                <div class="grid">
+                  <div class="img-holder-social">
+                    <div class="img-holder">
+                      <img src="assets/images/team/raju4.jpg" alt="Tahinur - Managing Director of Muttaqi Hajj & Consultancy" width="210" height="210" loading="lazy" />
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>ব্যবস্থাপনা পরিচালক</h3>
+                    <p>মোঃ তাহিনুর রহমান</p>
+                  </div>
+                </div>
+                <div class="grid">
+                  <div class="img-holder-social">
+                    <div class="img-holder">
+                      <img src="assets/images/team/raju5.jpg" alt="Mehedi - Managing Director of Muttaqi Hajj & Consultancy" width="210" height="210" loading="lazy" />
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>ব্যবস্থাপনা পরিচালক</h3>
+                    <p>মোঃ মেহেদি হাসান</p>
+                  </div>
+                </div>
+                <div class="grid">
+                  <div class="img-holder-social">
+                    <div class="img-holder">
+                      <img src="assets/images/team/raju6.jpg" alt="Sujon - Managing Director of Muttaqi Hajj & Consultancy" width="210" height="210" loading="lazy" />
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>ব্যবস্থাপনা পরিচালক</h3>
+                    <p>মোঃ হাবিবুর রহমান সুজন</p>
+                  </div>
+                </div>
+                <div class="grid">
+                  <div class="img-holder-social">
+                    <div class="img-holder">
+                      <img src="assets/images/team/raju7.jpg" alt="Rokon - Managing Director of Muttaqi Hajj & Consultancy" width="210" height="210" loading="lazy" />
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>ব্যবস্থাপনা পরিচালক</h3>
+                    <p>মোঃ মাহফুজুর রহমান রোকন</p>
+                  </div>
+                </div>
+                <div class="grid">
+                  <div class="img-holder-social">
+                    <div class="img-holder">
+                      <img src="assets/images/team/raju8.jpg" alt="Shanto - Managing Director of Muttaqi Hajj & Consultancy" width="210" height="210" loading="lazy" />
+                    </div>
+                  </div>
+                  <div class="details">
+                    <h3>ব্যবস্থাপনা পরিচালক</h3>
+                    <p>মোঃ মেহেদি হাসান শান্ত</p>
                   </div>
                 </div>
               </div>
@@ -247,17 +349,30 @@
           <div class="row">
             <div class="col col-md-6">
               <div class="about-text">
-                <h2>Allah Makes the Impossible <span>Possible</span>.</h2>
+                <h2><span>আল্লাহ  </span>অসম্ভবকে সম্ভব করেন।</h2>
                 <p>
-                  Our team is led by the experienced and dedicated Raju Mia,
-                  the Proprietor, and Sadiqul Islam,
-                  LL.B (Hon's), LL.M, the Coordinator. Both of them are
-                  committed to ensuring your travel needs are met efficiently.
-                  We offer a comprehensive range of services, including Hajj and
-                  Umrah service, International and Domestic Air ticketing with
-                  Hotel booking confirmation, tour packages, Visa processing for
-                  all countries, passport processing, Manpower services, and
-                  immigration process assistance.
+                  আমাদের প্রতিষ্ঠান শুরু হয় অভিজ্ঞ ও নিষ্ঠাবান প্রতিষ্ঠাতা <strong>মোঃ রাজু মিয়া</strong>–এর নেতৃত্বে।
+                   তার দূরদর্শী দিকনির্দেশনায় আমরা দ্রুতই একটি নির্ভরযোগ্য ভ্রমণ ও ইমিগ্রেশন সেবা 
+                   প্রতিষ্ঠান হিসেবে পরিচিতি লাভ করি। বর্তমানে তার সঙ্গে যুক্ত রয়েছেন দক্ষ ব্যবস্থাপনা
+                    পরিচালকবৃন্দ— <strong>মোঃ শাহাদাৎ হোসেন খন্দকার সাগর</strong>, 
+                    <strong>এ কে এম সাদিকুল আলম</strong>, 
+                    <strong>মোঃ তাহিনুর রহমান</strong>, 
+                    <strong>মোঃ মেহেদি হাসান</strong>, 
+                    <strong>মোঃ হাবিবুর রহমান সুজন</strong>, 
+                    <strong>মোঃ মাহফুজুর রহমান রোকন</strong> এবং 
+                    <strong>মোঃ মেহেদি হাসান শান্ত</strong>। তাঁরা সকলেই 
+                    অভিজ্ঞতা, পেশাদারিত্ব ও আন্তরিকতার সঙ্গে গ্রাহকদের সর্বোচ্চ মানের সেবা 
+                    প্রদানে প্রতিশ্রুতিবদ্ধ। আমরা বিশ্বাস করি, একটি সফল ভ্রমণের পেছনে রয়েছে 
+                    নিখুঁত পরিকল্পনা ও দক্ষ ব্যবস্থাপনা। এই বিশ্বাসকে কেন্দ্র করে আমরা গড়ে তুলেছি 
+                    এক ছাতার নিচে সমস্ত ভ্রমণ ও ইমিগ্রেশন সেবা — যার মধ্যে রয়েছে হজ্ব ও 
+                    উমরাহ ব্যবস্থাপনা, আন্তর্জাতিক ও অভ্যন্তরীণ বিমান টিকিট বুকিং, হোটেল বুকিং 
+                    নিশ্চিতকরণ, দেশি ও বিদেশি ট্যুর প্যাকেজ, বিশ্বের সকল দেশের জন্য 
+                    ভিসা প্রসেসিং, পাসপোর্ট প্রক্রিয়াকরণ, জনশক্তি রপ্তানি সংক্রান্ত পরামর্শ ও সহায়তা,
+                     এবং ইমিগ্রেশন প্রক্রিয়ায় প্রয়োজনীয় দিকনির্দেশনা। আমাদের লক্ষ্য শুধুমাত্র 
+                     সেবা প্রদান নয় — বরং আপনাকে একটি নির্ভরযোগ্য অভিজ্ঞতা উপহার দেওয়া, 
+                     যেখানে আপনার প্রতিটি পদক্ষেপ হবে সহজ, সুরক্ষিত ও নিশ্চিন্ত। 
+                     আমরা গর্বিত যে, আমাদের টিম শত শত গ্রাহকের সন্তুষ্টি অর্জন করতে 
+                     সক্ষম হয়েছে, এবং ভবিষ্যতেও এই আস্থা বজায় রাখতে আমরা প্রতিশ্রুতিবদ্ধ।
                 </p>
               </div>
             </div>
