@@ -2577,9 +2577,17 @@ hero-section
     margin-bottom: 22px;
 }
 
-.hero .hero-title h2 {
+.hero .hero-title span {
     font-family: 'Readex Pro', sans-serif;
     font-size: 3.8rem;
+}
+
+.hero .hero-title h1 {
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
+    font-size: 42px;
+    font-size: 2.8rem;
+    margin: 0 0 0.76em;
 }
 
 .hero p,
@@ -2613,7 +2621,10 @@ hero-section
         font-size: 35px;
         font-size: 2.33333rem;
     }
-    .hero .hero-title h2 {
+    .hero .hero-title span {
+       font-size: 2.33333rem;
+    }
+    .hero .hero-title h1 {
        font-size: 2.33333rem;
     }
 }
@@ -2623,7 +2634,10 @@ hero-section
         font-size: 28px;
         font-size: 1.86667rem;
     }
-    .hero .hero-title h2 {
+    .hero .hero-title span {
+       font-size: 1.86667rem;
+    }
+    .hero .hero-title h1 {
        font-size: 1.86667rem;
     }
     .preloader img{
